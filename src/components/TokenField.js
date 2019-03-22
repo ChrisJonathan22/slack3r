@@ -1,5 +1,5 @@
 import React from "react";
-import { getChannels } from "../api/slack";
+import { getMembers } from "../api/slack";
 
 class Token extends React.Component {
   constructor(props) {
@@ -15,8 +15,7 @@ class Token extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
-    getChannels(this.state.value);
+    getMembers(this.state.value);
     event.preventDefault();
   }
 
