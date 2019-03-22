@@ -1,4 +1,5 @@
 import React from "react";
+import { getChannels } from "../api/slack";
 
 class Token extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Token extends React.Component {
 
   handleSubmit(event) {
     alert("A name was submitted: " + this.state.value);
+    getChannels(this.state.value);
     event.preventDefault();
   }
 
@@ -22,14 +24,13 @@ class Token extends React.Component {
     return (
       <div className="Token-area">
         <form onSubmit={this.handleSubmit}>
-          <label>
-            Token:
-            <input
-              type="text"
-              value={this.state.value}
-              onChange={this.handleChange}
-            />
-          </label>
+          <span>Enter your token:</span>
+          <input
+            type="text"
+            placeholder="Enter your token here"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
           <button type="submit">Submit</button>
         </form>
       </div>

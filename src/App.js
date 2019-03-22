@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from "./components/Logo";
 import Instructions from "./components/Instructions";
 import TokenField from "./components/TokenField";
+import Download from "./components/Download";
 import "./App.css";
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <Logo />
         <Instructions />
         <TokenField />
+        <Download />
       </div>
     );
   }
