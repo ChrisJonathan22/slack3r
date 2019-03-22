@@ -1,4 +1,4 @@
-## Available Scripts
+## Getting started
 
 - Clone project
 - Run `npm install` to get the packages
