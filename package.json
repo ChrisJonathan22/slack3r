@@ -4,9 +4,12 @@
   "private": true,
   "main": "public/Main.js",
   "dependencies": {
+    "csv-writer": "^1.2.0",
+    "dateformat": "^3.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "slack": "^11.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
